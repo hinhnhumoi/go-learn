@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+type Vertex2 struct {
+	Lat, Long float64
+}
+
+var m map[string]Vertex2
+
+func func19() {
+	fmt.Println("func19: ")
+	m = make(map[string]Vertex2)
+	m["Bell Labs"] = Vertex2{40.68433, -74.39967,}
+	m["aaaa"] = Vertex2{40.68433, -74.39967,}
+
+	fmt.Println(m)
+}
