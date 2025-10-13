@@ -72,5 +72,28 @@ func func6()  {
 
 }
 
+func AbsFunc(v Vertex) float64 {
+	return math.Sqrt(v.X*v.X + v.Y*v.Y)
+}
+
+func func7() {
+	fmt.Println("func 7: ")
+	v := Vertex{3, 4}
+	fmt.Println(v.Abs())
+	fmt.Println(AbsFunc(v))
+
+	p := &Vertex{4, 3}
+	fmt.Println(p.Abs())
+	fmt.Println(AbsFunc(*p))
+}
+
+func func8() {
+	fmt.Println("func 8: ")
+	v := &Vertex{3, 4}
+	fmt.Printf("Before scaling: %+v, Abs: %v\n", v, v.Abs())
+	v.Scale(5)
+	fmt.Printf("After scaling: %+v, Abs: %v\n", v, v.Abs())
+}
+
 
 

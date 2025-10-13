@@ -7,4 +7,7 @@ func main() {
 	func4()
 	func5()
 	func6()
+	func7()
+	func8()
+	func9()
 }
