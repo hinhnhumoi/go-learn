@@ -10,4 +10,4 @@ func main() {
 	func7()
 	func9()
 	func10()
-}
+}cd
